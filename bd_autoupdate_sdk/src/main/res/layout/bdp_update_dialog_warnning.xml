@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		android:layout_alignParentTop="true"
+        android:paddingTop="14dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:background="@drawable/bdp_update_bg_dialog_bg_white"
+	    android:gravity="center"
+	    android:orientation="vertical">
+	    
+        <!-- 内容文字 -->
+        <TextView 
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/bdp_dark_gray"
+            android:textSize="16sp"
+            />
+	    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:orientation="horizontal"
+            >
+            
+            <!-- 按钮A -->
+		    <Button 
+		        android:id="@+id/btn_a"
+		        android:layout_width="0dip"
+		        android:layout_height="38dip"
+		        android:layout_weight="1"
+		        android:textColor="@color/bdp_white"
+		        android:textSize="16sp"
+		        android:background="@drawable/bdp_update_bg_dialog_btn_blue"
+		        android:visibility="gone"
+		        />
+            
+            <!-- 按钮B -->
+		    <Button 
+		        android:id="@+id/btn_b"
+		        android:layout_width="0dip"
+		        android:layout_height="38dip"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="12dip"
+		        android:textColor="@color/bdp_white"
+		        android:textSize="16sp"
+		        android:background="@drawable/bdp_update_bg_dialog_btn_blue"
+		        android:visibility="gone"
+		        />
+        </LinearLayout>
+	</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bdp_update_icon_warnning"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bdp_update_bg_dialog_bg_white" >
+    
+    <TextView 
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dip"
+        android:drawableLeft="@drawable/bdp_update_img_tip"
+        android:drawablePadding="7dip"
+        android:gravity="center_vertical"
+		android:text="@string/bdp_update_title_as"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        android:background="@null"
+        />
+    
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/txt_title"
+        android:background="#ffe9e9e9"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vDivider"
+	    android:paddingTop="18dip"
+	    android:paddingLeft="26dip"
+	    android:paddingRight="26dip"
+	    android:paddingBottom="24dip"
+        android:background="@drawable/bdp_update_bg_dialog_content"
+        android:orientation="vertical">
+        
+        <ScrollView 
+	        android:layout_width="match_parent"
+	        android:layout_height="100dip"
+	        android:layout_marginBottom="24dip"
+	        android:fadingEdge="vertical"
+	        android:fadingEdgeLength="20dip"
+	        android:requiresFadingEdge="vertical"
+	        >
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:text="@string/bdp_update_as_install_tip"
+	            android:textColor="#ff333333"
+	            android:textSize="13sp"
+	            />
+	    </ScrollView>
+            
+        <Button
+            android:id="@+id/btnInstall"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:text="@string/bdp_update_as_action_install"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            android:background="@drawable/bdp_update_bg_dialog_btn_blue"
+            />
+		<TextView
+			android:id="@+id/txtCancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+			android:paddingTop="10dp"
+			android:textColor="@color/bdp_deep_gray"
+			android:textSize="13sp"
+			android:layout_gravity="center"
+			android:text="@string/bdp_update_as_action_cancel"
+			/>
+    </LinearLayout>
+</RelativeLayout>

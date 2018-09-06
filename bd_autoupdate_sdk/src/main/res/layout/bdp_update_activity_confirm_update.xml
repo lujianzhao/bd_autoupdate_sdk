@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bdp_update_bg_dialog_bg_white" >
+    
+    <TextView 
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dip"
+        android:drawableLeft="@drawable/bdp_update_img_tip"
+        android:drawablePadding="7dip"
+        android:gravity="center_vertical"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        android:background="@null"
+        />
+    
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/txt_title"
+        android:background="#ffe9e9e9"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vDivider"
+	    android:paddingTop="18dip"
+	    android:paddingLeft="26dip"
+	    android:paddingRight="26dip"
+	    android:paddingBottom="24dip"
+        android:background="@drawable/bdp_update_bg_dialog_content"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/txt_main_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dip"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#ff58b6ff"
+            android:textSize="14sp"
+            />
+        
+        <ScrollView 
+	        android:layout_width="match_parent"
+	        android:layout_height="100dip"
+	        android:layout_marginBottom="24dip"
+	        android:fadingEdge="vertical"
+	        android:fadingEdgeLength="20dip"
+	        android:requiresFadingEdge="vertical"
+	        >
+	        
+	        <TextView 
+	            android:id="@+id/txt_minor_tip"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#ff333333"
+	            android:textSize="13sp"
+	            />
+	    </ScrollView>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+	        <Button 
+	            android:id="@+id/btnUpdate"
+	            android:layout_width="0dip"
+	            android:layout_height="40dip"
+	            android:layout_weight="1"
+	            android:layout_marginRight="27dip"
+	            android:textColor="#ff333333"
+	            android:textSize="14sp"
+	            android:background="@drawable/bdp_update_bg_dialog_btn_white"
+	            />
+            
+	        <Button 
+	            android:id="@+id/btnUpdateRecommend"
+	            android:layout_width="0dip"
+	            android:layout_height="40dip"
+	            android:layout_weight="1"
+	            android:textColor="#ffffffff"
+	            android:textSize="14sp"
+	            android:background="@drawable/bdp_update_bg_dialog_btn_blue"
+	            />
+        </LinearLayout>
+		<TextView
+			android:id="@+id/txtIgnore"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+			android:paddingTop="10dp"
+			android:textColor="#ffabbed9"
+			android:textSize="13sp"
+			android:layout_gravity="center"
+			android:text="@string/bdp_update_ignore"
+			/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bdp_update_icon_close"/>
+</RelativeLayout>

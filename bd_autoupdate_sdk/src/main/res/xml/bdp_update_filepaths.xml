@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<resources>
+    <external-files-path name="extfiles" path="autoupdatecache/" />
+    <external-cache-path name="extcachs" path="autoupdatecache/" />
+    <cache-path name="intcachs" path="autoupdatecache/" />
+</resources>
